@@ -1,0 +1,186 @@
+/* General page style */
+body {
+    background-color: #0a1f44; /* Dark bluish background */
+    color: #ffffff; /* White text color for contrast */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Header style */
+  h1 {
+    font-size: 3.5em;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  /* Links style */
+  a {
+    color: #4da6ff; /* Light blue color for links */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  a:hover {
+    color: #ffdd57; /* Hover effect with gold color */
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* Horizontal rule style */
+  hr {
+    border: 0;
+    height: 2px;
+    background: #4da6ff;
+    margin: 20px auto;
+    width: 60%;
+  }
+  
+  /* Table style */
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for table */
+    animation: fadeIn 2s ease;
+  }
+  
+  th, td {
+    padding: 15px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    font-size: 1.1em;
+  }
+  
+  th {
+    background-color: #133b70; /* Darker blue for table headers */
+    animation: slideIn 1.5s ease-in-out;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  td {
+    background-color: #1f497d; /* Slightly lighter blue for table data */
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  /* Form input fields style */
+  input[type="text"], input[type="number"], input[type="date"], textarea {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #4da6ff;
+    background-color: #2a4a7a;
+    color: #ffffff;
+    border-radius: 8px;
+    width: 80%;
+    box-sizing: border-box;
+    font-size: 1em;
+    animation: fadeInUp 1s ease-in-out;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, textarea:focus {
+    border-color: #ffdd57; /* Gold border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Buttons style */
+  input[type="submit"], input[type="reset"] {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4da6ff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    animation: bounce 2s infinite;
+  }
+  
+  input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #ffdd57;
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  }
+  
+  input[type="submit"]:active, input[type="reset"]:active {
+    transform: translateY(0); /* Reset transform when clicked */
+    box-shadow: none;
+  }
+  
+  /* Form textarea style */
+  textarea {
+    resize: vertical;
+    max-height: 200px;
+  }
+  
+  /* Animations */
+  
+  /* Fade-in effect for header */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Slide-in effect for table elements */
+  @keyframes slideIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-in up effect for form fields */
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Bounce animation for buttons */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Footer-style (if you have one) */
+  footer {
+    background-color: #133b70;
+    padding: 10px;
+    color: rgb(48, 32, 194);
+    font-size: 0.9em;
+    margin-top: 50px;
+  }
+  
+  footer a {
+    color: #ff4d71;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #c1ff57;
+  }
+  

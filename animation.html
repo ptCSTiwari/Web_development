@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS ANIMATION</title>
+  <style>
+.contain{
+  height: 50vh;
+  width: 80vw;
+  background-color: rgb(159, 159, 205);
+}
+.box video{
+  width: 220px;
+  height: 130px;
+border: 2.5px solid red;
+}
+
+.box:hover video{
+  animation-name: tiwari;
+  animation-duration: 1s;
+  animation-direction: alternate-reverse;
+  /* transition-timing-function: cubic-bezier(0.09, 0.5, 0, 0.99); */
+  animation-iteration-count: infinite;
+  /* animation-timing-function: ease-out; */
+}
+@keyframes tiwari{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(1000px);
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="contain">
+    <div class="box"><video src="Picsart_24-10-10_20-32-21-389.mp4" controls muted></video></div>
+  </div>
+</body>
+</html>

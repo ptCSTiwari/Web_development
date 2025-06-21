@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .co {
+      background-color: rgb(177, 179, 92);
+      width: 50vw;
+      height: 40vh;
+    }
+
+    .box {
+      height: 5vh;
+      width: 4vh;
+      /* border: 3px solid aquamarine; */
+      /* border: 3px solid rgb(200, 255, 0); */
+      background: rebeccapurple;
+      /* text-align: center; */
+      /* display: flex; */
+      /* justify-content: center; */
+      /* align-items: center; */
+      /* margin:auto; */
+      transition-property: all;
+      transition-duration: 3s;
+      transition-timing-function: cubic-bezier(0.09, 0.5, 0, 0.99);
+      transition-delay: 1s;
+    }
+
+    .box:hover {
+      transform: translateX(10vw) translateY(10vh) scale(3);
+      background-color: cornsilk;
+      /* transform: scale(x-large); */
+    }
+
+    ul li {
+      display: inline;
+      border: 2px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="co">
+    <nav>
+      <header>
+        <ul>
+          <li>HOME</li>
+          <li>SUPPORT</li>
+          <li>HELP</li>
+          <li>CONTACT</li>
+        </ul>
+      </header>
+    </nav>
+    <div class="box">me</div>
+  </div>
+</body>
+
+</html>
